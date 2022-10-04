@@ -10,6 +10,7 @@
 - yang membedakan adalah index pada tie data object bisa menggunakan string
 - index di object biasanya di sebut attributes atau properties, bukan index
 */
+
 // membuat object kosong
 const orang = {};
 
@@ -21,3 +22,21 @@ orang["moto"] = "slebew";
 // menghapus
 delete orang["moto"]; // => menghapus colums moto
 console.table(orang);
+
+// kode : membuat object dengan properties
+const orangSatu = {
+  nama: "auliaaa",
+  alamat: "jonggol",
+  kelas: "12 rpl1",
+};
+console.table(orangSatu);
+
+// kode mengakses property object
+const orangDua = {
+  nama: "auliaaa",
+  alamat: "jonggol",
+  kelas: "12 rpl1",
+};
+console.log(`nama : ${orangDua.nama}`);
+console.log(`alamat : ${orangDua.alamat}`);
+console.log(`kelas : ${orangDua.kelas}`);
