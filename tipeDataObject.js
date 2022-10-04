@@ -12,3 +12,12 @@
 */
 // membuat object kosong
 const orang = {};
+
+// mengubah property di object
+orang["nama"] = "aulia martha slebew";
+orang["kelas"] = "12 rpl1";
+orang["moto"] = "slebew";
+
+// menghapus
+delete orang["moto"]; // => menghapus colums moto
+console.table(orang);
