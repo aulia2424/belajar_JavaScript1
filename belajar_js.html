@@ -308,13 +308,29 @@
        - NaN adalah number spesial yang menyebutkanbahwa ini bukanlah number
        - jika NaN dioperasikan dengan data number lainnya, maka hasilnya akan menjadi NaN lagi
         // mentolerir kesalahan 
-  document.writeln(`<p>${parseInt("salah")}</p>`);
-  document.writeln(`<p>${parseFloat("1.1text")}</p>`);
+       document.writeln(`<p>${parseInt("salah")}</p>`);
+       document.writeln(`<p>${parseFloat("1.1text")}</p>`);
 
-  //  number() tidak akan mentolerir ksealahan pada data
-  document.writeln(`<p>${Number("1.1ups")}</p>`);
-  document.writeln(`<p>${Number("salah")}</p>`);
-  document.writeln(`<p>${Number("salah")}</p>`);
+       number() tidak akan mentolerir ksealahan pada data
+       document.writeln(`<p>${Number("1.1ups")}</p>`);
+       document.writeln(`<p>${Number("salah")}</p>`);
+       document.writeln(`<p>${Number("salah")}</p>`);
 
     */
+
+  // Alert
+  alert("selamat datang aul slebew");
+
+  // Prompt
+  const nama = prompt("apakah aul ratu pantai selatan?");
+  alert(`hai ${"ratu pantai selatan"}`);
+
+  // Confirm
+  const masuk = confirm("apakah kamu keturunan ibu peri");
+  if (masuk) {
+    const name = prompt("siapa nama ibu kamu?");
+    alert(`halo anak ibu ${name}`);
+  } else {
+    alert("babayyyyy");
+  }
 </script>
