@@ -1,0 +1,320 @@
+<script>
+  /*
+       JavaScript di sever
+       - awalnya js memang kebanyakan digunakan untuk berjalan di client side (browser)
+       - namun akhir-akhir ini, semenjak keluar teknologi nodejs yang bisa digunakan untuk mnjalankan js tanpa browser, sekarang akhirnya js juga banyak digunakan untuk membuat aplikasi server
+       - karena ini, akhirnya sekrang js dikenal dengan bahasa pemrograman fullstack (be adn fe) karena bisa digunakan untuk membuat aplikasi be dan aplikasi fe
+
+       JavaScript dan Ecma Script
+       - karena js sekarang hampir di adopsi oleh sebuah aplikasi browser, akhirnya dibuatlah sebuah standarisasi yang bernama ecmaScript
+       - organisasi yang melakukan standarisasi ecma adalah ECMA International
+       - sekarang karena ecmascript dan js sama, sekarang bisa dibilang ecmascript dan js adalah dua nama untuk satu bahasa pemrograman yang sama.
+
+       MEMBUAT PROGRAM SEDERHANA
+       document.writeln("hello aul")
+
+       MEMBUAT PORGRAM SEDERHANA
+       document.writeln("hello aul");
+
+       Titik Koma
+       - js mirip seperti bahasa pemrogramman C/C++, dimana di akhir tiap statement kode program, kita perlu menambahkan titik koma ;
+       - namun, di js tanda ; tidak wajib, jadi kita bisa menambahkan ataupun tidak.
+       - sangat di sarankan konsisten, jika ingin menggunakan titik koma, gunakan di semua tempat, jika tidak jangan gunakan di semua tempat
+       - saya sendiri lebih merekomendasikan menggunakan titikk koma
+
+       KOMENTAR
+       - komentar adalah kode program yang tidak akan dieksekusi ketika dibaca
+       - komentar biasanya digunakan sebagai informasi tambahan atau petunjuk
+       - di js, kita bisa menambahkan kode komentar
+
+       TIPE DATA NUMBER
+       - js hanya mendukung satu tipe data number, dimana tipe data number di js bisa berupa bilangan bulat atau bilangan decimal
+       - tipe seperti di bahasa pemrograman lain yang biasanya membedakan tipe data number bilangan bulat dan bilangan desimal, di js semua di satukan
+       document.writeln(100);
+       document.writeln("</br>");
+       document.writeln(100.100); => jadi 100 koma 100 (koma = .)
+
+       NUMBER NOTATION
+       - js mendukung number notation, defaultnya ada basis 10, js juga mendukung binary, hexadecimal dan octal
+       - hexadecimal : 0xFF
+       - binary : 0b10101
+       - Octal : Oo10
+       document.writeln(0b1111010);
+
+       
+
+       TIPE DATA STRING
+       - tipe data string atau text adalah tipe data yang berisikan kumpulan kosongan atau lebih karakter
+       - sebelumnya kita sudah pernah menggunakan string ketika membuat program hello world
+       - di js, untuk membuat data dengan tipe string, kita perlu menggunaan "petik dua" atau 'petik satu' sebelum dan setelah textnya.
+       document.writeln("aulia martha brielliant");
+       document.writeln("</br>");
+       document.writeln("kelas 12 rpl 1");
+
+       MENAMBAH STRING
+       - data string bisa digabung menggunakan operator + (plush)
+       document.writeln("aulia martha brielliant : " + "slebew");
+       document.writeln("</br>");
+       document.writeln("kelas 12 rpl 1 : " + "kelas terbaik di alam semesta");
+
+       =======ESCAPE SEQUENCE=======
+       - js mendukung escape sequence di string. escape sequence merupakan karakter khusus seperti enter, tab ,"", dan lain-lain. berikut comtoh escape sequence yang di dukung oleh js di data string
+       | \n | Enter |
+       | \t | TAP   |
+       | \' | ''    |
+       | \" | ""    |
+       | \\ | \\    |
+       document.writeln("<textarea cols='100' rows='10'>");
+       document.writeln("Aulia martha brielliant \n12 rpl1 \nSMK fatahillah cileungsi");
+       document.writeln("\\rumah\\aull");
+       document.writeln('"aulia slebew ciprut kecili"');
+       document.writeln("'aulia slebew ciprut kecili'");
+       document.writeln("</textarea>");
+
+       KODE TANPA VARIABLE
+       document.writeln("Aulia martha brielliant");
+       document.writeln("</br>");
+       document.writeln("mamang racing");
+       document.writeln("</br>");
+       document.writeln("ncit babeh");
+
+       VARIABLE
+       - variable adalah tempat untuk menyimpan data
+       - dengan menyimpan data di variable, kita bisa menggunakannya lagi dengan menyebutkan nama variablenya
+       - untuk membuat variable di js, kita bisa menggunakan kata kunci var diikuti dengan nama variablenya
+       - js adalah dynamic language, artinya variable di js tidak terpaku harus menggunakan satu tipe data, kita bisa mengubah-ubah tipe data di variable yang sama.
+       var fullName
+
+       OPERATOR MATEMATIKA
+       - js mendukung banyak operator matematika untuk tipe data number, seperti :
+       - operator aritmatika
+       - operator Augmented Assignments
+       - operator Unary
+       - dan lain-lain
+       | oprator | keterangan  |
+       | +       | pertambahan |
+       | -       | pengurangan |
+       | *       | perkalian   |
+       | **      | Exponensial |
+       | /       | pembagian   |
+       | %       | sisa bagi   |
+
+       let result = 1 + 2;
+       document.writeln("<p>1 + 2 = " + result + "</p>"); => 1 + 2 lalu ita panggil variable hasilnya = 3
+       let originalResult = result;
+
+       result = result - 1;
+       document.writeln("<p>" + originalResult + " - 1 = " + result + "</p>"); => result tadi yatu 3 - 1 lalu ita panggil variable hasilnya = 2
+       originalResult = result;
+
+       result = result * 2;
+       document.writeln("<p>" + originalResult + " * 2 = " + result + "</p>"); => keadaan terakhir yaitu 2 * 2 lalu ita panggil variable hasilnya = 4
+
+       OPERATOR AUGMENTED ASSINGNMENTS
+       | operator matematika   | operator augmented assignments |
+       | results = result + 10 | result += 10                   |
+       | result = result - 10  | result -= 10                   |
+       | result = result * 10  | result *= 10                   |
+       | result = result ** 10 | result **= 10                  |
+       | result = result / 10  | result /= 10                   |
+       | result = result % 10  | result %= 10                   |
+       let result = 10;
+       result += 10;
+       document.writeln("<p>" + result + "</p>");
+
+       result -= 10;
+       document.writeln("<p>" + result + "</p>");
+
+       result *= 10;
+       document.writeln("<p>" + result + "</p>");
+
+       result **= 10;
+       document.writeln("<p>" + result + "</p>");
+
+       result /= 10;
+       document.writeln("<p>" + result + "</p>");
+
+       result %= 10;
+       document.writeln("<p>" + result + "</p>");
+
+
+       OPERATOR UNARY
+       | +  | menandakan positif            |
+       | -  | menandakan negatif            |
+       | ++ | increment, menaikan 1 angka   |
+       | -- | decrement, menurunkan 1 angka |
+       let result = +1;
+       document.writeln("<p>" + result + "</p>"); => result = positif 1
+
+       result -= 1;
+       document.writeln("<p>" + result + "</p>"); => 1 - 1= 0
+
+       result--;
+       document.writeln("<p>" + result + "</p>"); => 0 - 1 = -1
+
+       result++;
+       document.writeln("<p>" + result + "</p>"); -1 + 1 = 0
+
+       OPERASI PERBANDINGAN
+       - operasi perbandinga adalah operasi untuk membandingkan dua buah data
+       - operasi perbandingan adalah operasi yang menghasilkan nilai boolean (true of false)
+       - jika hasil operasi adalah benar, maka nilai true
+       - jika hasil operasi adalah salah, maka nilai false
+       | operator | keterangan                             |
+       | >        | lebih dari                             |
+       | <        | kurang dari                            |
+       | >=       | lebih dari sama dengan                 |
+       | <=       | kurang dari sama dengan                |
+       | ==       | sama dengan                            |
+       | ===      | sama dengan dan sama tipe              |
+       | !=       | tidak sama dengan                      |
+       | !===     | tidak sama dengan atau tidak sama tipe |
+       let result = 5 > 10;
+       document.writeln("<p>" + result + "</p>"); => lima lebih besar dari 10 = false
+
+       result = 5 < 10;
+       document.writeln("<p>" + result + "</p>"); => lima kecil besar dari 10 = true
+
+       result = 5 >= 10;
+       document.writeln("<p>" + result + "</p>"); => lima lebih dari sama dengan 10 = false
+
+       result = 5 <= 10;
+       document.writeln("<p>" + result + "</p>"); => lima kurang dari sama dengan 10 = true
+
+       result = 5 == 10;
+       document.writeln("<p>" + result + "</p>"); => lima sama dengan 10 = false
+
+       result = 5 === 10;
+       document.writeln("<p>" + result + "</p>"); => lima sama dengan dan sama tipe 10 = false
+
+       result = 5 != 10;
+       document.writeln("<p>" + result + "</p>"); => lima tidak sama dengan 10 = true
+
+       result = 5 !== 10;
+       document.writeln("<p>" + result + "</p>"); => lima tidak sama dengan dan sama tipe 10 = true
+
+       OPERATOR LOGIKA
+       - operator logika adalah operator untuk dua buah data boolean
+       - hasil dari operator logika adalah boolean lagi
+       | operator | keterangan |
+       | &&       | dan        |
+       | ||       | atau       |
+       | !        | kebalikan  |
+
+       OPERATOR &&
+       | nilai 1 | operator | nilai 2 | hasil |
+       |  true   | &&       | true    | true  | true bertemu true maka hasilnya true
+       |  true   | &&       | false   | false | pokonya kalo ada falsenya hasilnya akan false
+       | false   | &&       | true    | false |
+       | false   | &&       | false   | false |
+
+       OPERATOR UNARY !
+       | operator | nilai 2 | hasil |
+       | !        | true    | false |
+       | !        | flase   | true  |
+       const nilaiUjian = 90;
+       const nilaiAbsensi = 90;
+       document.writeln(nilaiUjian);
+
+       const lulusUjian = nilaiUjian > 75;
+       const lulusAbsensi = nilaiAbsensi > 75;
+       document.writeln(nilaiAbsensi);
+
+       const lulus = lulusUjian && lulusAbsensi;
+       document.writeln("<p>" + lulus + "</p>"); => true karena 90 lebih besar dari nilai 75 maka ia lulus ujian
+
+       CONSOLE
+       - js memiliki fitur untuk melakukan logging bernama console
+       - logging adalah mekanisme yang bisa dilakukan oleh programmer untuk menampilkan informasi dari aplikasi yang sedang berjalan, tanpa harus mengganggu alur kerja aplikasi dan juga interaksi user
+       - untuk melakukan ini, kita bisa menggunakan fitur console js
+       - untuk menggunakan console, kita cukup gunakan perintah console di kode js
+
+       CONSOLE METHOD
+       | console method  | keterangan                               |
+       | console.info()  | memberitahu informasi                    | => console.log
+       | console.warn()  | memberitahu informasi peringatan         |
+       | console.error() | memeberitahu informasi error             |
+       | console.table() | memberitahu informasi dalam bentuk table |
+       console.log("halo aul slebew");
+       console.warn("ini di hek kids");
+       console.error("ini sudah di hek kids");
+       console.table("slebeww");
+
+       STRING TAMPLATE
+       - kita sudah tahu bahwa menambahkan string dengan data lain, kita bisa meggunakan operator + (plus)
+       - namun pada kasus tertentu, pengguna operator + (plus) sangat meyulitkan, apalagi jika dalam jumlah banyak
+       - js memiliki fitur yang bernama string template, dimana kita bisamensubtitusi data dari luar string ke dalam string seperti mengambil data variable, atau bahkan melakukan operasi matematika
+       - untuk menggunakan string template, cara pembuatan stringnya harus menggunakan `backtick` bukan petik satu atau petik dua.
+       const name = "aullll";
+       const template = `nama : ${name}`; => name atau variable di masukan ke dalam ${name}
+       console.info(template);
+       const firstName = "aulia";
+
+       const middleName = "martha";
+       const lastName = "brielliant";
+       const namaLengkap = `Nama Lengkap : ${firstName} ${middleName} ${lastName}`;
+       console.log(namaLengkap);
+
+       KODE : EXPRSSION DI STRING TAMPLATE
+       const nama = "aulia martha brielliant";
+       const value = 98;
+       const tamplate = `Nama : ${nama}, Lulus : ${value > 75}`;
+       console.log(tamplate);
+
+       KODE MULTILINE STRING
+       let multiLineString = `
+        Nama saya adalah aulia martha brielliant
+        kelas 12 rpl1
+        slebew
+        `;
+       document.writeln("<pre>");
+       document.writeln(multiLineString);
+       document.writeln("</pre>");
+
+       KONVERSI STRING DAN NUMBER
+       - saat membuat aplikasi kita input dari pengguna selalu dalam bentuk string
+       - sedangkan kita ingin mengelola datanya dalam bentuk number
+       - maka sangat disarankan untuk melakukan konverensi tipe data.
+
+       KODE MASALAH TANPA KONVERSI
+       const value1 = "1"; => tipe data string
+       const value2 = 1; => tipe data number
+       const sum = value1 + value2; => string 1 ditambah number 1 = 11 jika string di tambah number = string
+       document.writeln(`<p>${sum}</p>`);
+
+       MELAKUKAN KONVERSI STRING DAN NUMBER
+       | function            | keterangan                                                       |
+       | parseInt (string)   | mengkonversi dari string ke number (bilangan bulat)              |
+       | parseFloat (string) | mengkonversi dari string ke number (bilangan pecahan)            |
+       | Number (string)     | mengkonversi dari string ke number (bilangan bulat atau pecahan) |
+       | number.toString ()  | mengkonversi dari number ke string                               |
+       const value1 = parseInt("1");
+       const value2 = 1;
+       const sum = value1 + value2;
+       document.writeln(`<p>${sum}</p>`); = 1*1 = 1
+
+       document.writeln(`<p>${parseInt("1.1")}</p>`); => bilangan bulat jadi yang di ambil hanya 1 bukan satu koma 1 = 1
+       document.writeln(`<p>${parseFloat("1.1")}</p>`); => bisa mengambil pecahan = 1.1
+       document.writeln(`<p>${Number("1.1")}</p>`); => menerima berbagai jenis number = 1.1
+
+       const a = 1;
+       const b = 1;
+       const total = a.toString() + b.toString(); => diubah tipe datanya menjadi string = 11
+       document.writeln(`<p>${total}</p>`);
+
+       NaN (Not A Number)
+       - bagaimana jika ternyata string yang kita coba konversi ke number bukannlah data yang valid?
+       - jika data string yang kita coba lakukan konversi bukanlah data yang valid, mkaa hasil dari konversi tersebut adalah NaN (Not A Number)
+       - NaN adalah number spesial yang menyebutkanbahwa ini bukanlah number
+       - jika NaN dioperasikan dengan data number lainnya, maka hasilnya akan menjadi NaN lagi
+        // mentolerir kesalahan 
+  document.writeln(`<p>${parseInt("salah")}</p>`);
+  document.writeln(`<p>${parseFloat("1.1text")}</p>`);
+
+  //  number() tidak akan mentolerir ksealahan pada data
+  document.writeln(`<p>${Number("1.1ups")}</p>`);
+  document.writeln(`<p>${Number("salah")}</p>`);
+  document.writeln(`<p>${Number("salah")}</p>`);
+
+    */
+</script>
