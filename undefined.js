@@ -43,6 +43,3 @@ if (someone.name == undefined) {
 } else {
   alert(`Hello ${someone.name}`);
 }
-
-document.writeln("<br>");
-document.writeln("<br>");
