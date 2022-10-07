@@ -27,6 +27,12 @@
        - komentar biasanya digunakan sebagai informasi tambahan atau petunjuk
        - di js, kita bisa menambahkan kode komentar
 
+       Fungsi document 
+       DOM adalah cara javascript melihat suatu halaman html. DOM adalah sebuah platform dan interface yang memperbolehkan pengaksesan dan perubahan pada konten, struktur, dan style pada sebuah dokumen oleh program dan script. Istilah HTML DOM mengacu kepada dokumen html.
+
+       document.writeln atau writeline 
+       Metode write digunakan untuk menuliskan teks tanpa ganti baris, sedangkan writeln digunakan untuk menuliskan teks dengan ganti baris. 
+
        TIPE DATA NUMBER
        - js hanya mendukung satu tipe data number, dimana tipe data number di js bisa berupa bilangan bulat atau bilangan decimal
        - tipe seperti di bahasa pemrograman lain yang biasanya membedakan tipe data number bilangan bulat dan bilangan desimal, di js semua di satukan
@@ -40,8 +46,6 @@
        - binary : 0b10101
        - Octal : Oo10
        document.writeln(0b1111010);
-
-       
 
        TIPE DATA STRING
        - tipe data string atau text adalah tipe data yang berisikan kumpulan kosongan atau lebih karakter
@@ -334,71 +338,40 @@
     alert("babayyyyy");
   }
 
-  /* Undefined
-       - Undefined adlh kata kunci di Js
-       - Undefined merupakan tipe data
-       - Suatu variable yang belum ditambahkan nilai, maka artinya variable tersebut merupakan tipe data Undefined
-       - Undefined berbeda dengan null di Bahasa Pemrogramman lain.
-       - jadi undefined itu kaya kita tuh baru masukin variablenya doang tapi datanya belum.
-       */
-  // jadi datanya kalo belum di definisikan maka akan muncul Undefined tetapi jika sudah di definisikan makaakan muncul Defined
-  document.writeln("-Undefined Variable-");
-  document.writeln("<br>");
-  document.writeln("coba klik kanan lalu klik inspect dan klik console");
-  let namasaya = "Aulll"; // DEFINED karena datanya ada datanya yaitu Aulll.
-  if (namasaya == undefined) {
-    console.info("UNDEFINED");
-  } else {
-    console.info("DEFINED");
-  }
-
-  document.writeln("<br>");
-  document.writeln("<br>");
-
-  document.writeln("-Undefined Array Value-");
-  document.writeln("<br>");
-  document.writeln("coba klik kanan lalu klik inspect dan klik console");
-  const namaAnda = ["Aulia", "Martha"];
-  if (namaAnda[2] == undefined) {
-    //hasilnya undefined karena index 2 tidak ada jadi tidak terdeteksi maka value yang keluar ARRAY UNDEFINED
-    console.info("ARRAY UNDEFINED");
-  } else {
-    console.info("ARRAY DEFINED");
-  }
-
-  document.writeln("<br>");
-  document.writeln("<br>");
-
-  document.writeln("-Undefined Object Property-");
-  document.writeln("<br>");
-  document.writeln("jika kita memasukkan data kita maka akan muncul Hello nama kita, jika kita tidak memasukkan data kita maka akan keluar popup Hello DUDE");
-
-  let someone = {};
-  if (someone.name == undefined) {
-    alert("Hello DUDE");
-  } else {
-    alert(`Hello ${someone.name}`);
-  }
-
-  /* Null
-       -null merupakan representasi data kosong.
-       -null berbeda dengan undefined, berati null sudalh ditambahkan valuenya, hanya saja valuenya null.
-       -sedangkan undefined adalah variable belum ditambahkan value apapun.
+  /* Operator typeof
+       - typeof merupakan operator yang bisa kita gunakan untuk melihat tipe data sebuah value atau variable.
+       - Karena Js merupakan Dynamic language Artinya, Anda tak harus menuliskan tipe data saat mengisi variable seperti pada bahasa pemrograman lainnya
+       - kadang kita perlu mengecek tipe data sebuah value / variable menggunakan operator typeof.
+       -Hasil dari operator typeof adalah string.
       */
-
-  document.writeln("-Null & Undefined-");
+  /*
+       | Type      | Hasil Operator typeof |
+       | Undefined | "undefined"           |
+       | Null      | "object"              |
+       | Boolean   | "boolean"             |
+       | Number    | "number"              |
+       | BitInt    | "bigint"              |
+       | String    | "string"              |
+       | Symbol    | "symbol"              |
+       | Function  | "function"            |
+       | Lainnya   | "object"              |
+      */
+  //artinya variable data misal adalah number nah apa yg akan di lakukan di alert
+  // jadi data di dalam alert adalah output yg akan kita keluarkan
+  // data keluar setelah NULL yang memiliki value sesuai dengan tipe datanya apa
+  document.writeln("-Operator typeof-");
   document.writeln("<br>");
-  document.writeln("nanti keluar popup NULL");
-  //jika valuenya di apus maka yg muncul akan undefine , jika value di idi dengan null maka valuenya null.
-  let namaPertama = null;
-  if (namaPertama === undefined) {
-    alert("UNDEFINED");
-  } else if (namaPertama == null) {
-    alert("NULL");
-  } else {
-    alert(namaPertama);
+  document.writeln("nanti keluar popup sesuai dengan tipe datanya");
+  let data = 100;
+  const typeData = typeof data;
+  if (typeof data === "number") {
+    alert("Number");
+  } else if (typeof data === "string") {
+    alert("String");
+  } else if (typeof data === "boolean") {
+    alert("Boolean");
+  } else if (typeof data === "object") {
+    alert("Object");
   }
-
-  document.writeln("<br>");
-  document.writeln("<br>");
+  document.writeln(`${typeData}`);
 </script>
