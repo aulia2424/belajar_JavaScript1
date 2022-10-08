@@ -371,7 +371,7 @@ console.log(segitigaSikuSiku);
 
 console.log("\n");
 
-console.log("kaya panah");
+console.log("Pattern Aul");
 //
 let delapan = 5;
 let STR = "";
