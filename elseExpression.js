@@ -11,9 +11,3 @@ if (examValue < 50) {
 } else {
   console.log("maaf coba lagi");
 }
-
-// let stars = "";
-// for (let i = 0; i <= 5; i++) {
-//   stars += "*";
-//   console.log(stars);
-// }
