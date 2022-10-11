@@ -29,3 +29,14 @@ console.log(nilaiAbsensi);
 
 const lulus = lulusUjian && lulusAbsensi;
 console.log(lulus); //=> true karena 90 lebih besar dari nilai 75 maka ia lulus ujian
+
+// cara satu
+var age = 20 >= 18;
+console.log(age);
+
+// cara lain
+function main() {
+  var age = parseInt(readLine(), 10);
+  // Your code here
+  console.log(age >= 18 ? true : false);
+}

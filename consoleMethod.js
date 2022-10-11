@@ -16,3 +16,11 @@ console.log("halo aul slebew");
 console.warn("ini di hek kids");
 console.error("ini sudah di hek kids");
 console.table("slebeww");
+
+// untuk operator assignment perilakubya seperti aritmatika dia tidak memperdulikan tipe data string dan numeric.
+// jadi kalo tipe datanya berbeda jika == maka true karena dia tidak perduli tipe datanya.
+// kecuali === karena dua memperdulikan tipe datanya
+x = 1;
+y = "1";
+var c = x / y;
+console.table(c);
