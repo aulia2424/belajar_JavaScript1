@@ -1,4 +1,4 @@
-var pilihan = 8;
+var pilihan = 2;
 /*
 1. light
 2. dark
@@ -38,5 +38,5 @@ switch (pilihan) {
     console.log("indigo");
 }
 
-// cara 3 menggunakan ternary operator
+// cara 3 menggunakan ternary operator fungsinya untuk mempermudah if else statement jadinya oneline lebih efisien
 console.log(pilihan == 1 ? "light" : pilihan == 2 ? "dark" : pilihan == 3 ? "nocture" : pilihan == 4 ? "terminal" : "indigo");
