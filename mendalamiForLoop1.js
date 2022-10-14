@@ -49,3 +49,16 @@ for (var elem in data) {
   console.log(elem, data[elem]);
 }
 // jika kita panggil console.log(elem) maka yang akan keluar hanya propertinya saja, gimana cara agar valuenya terpanggil? maka console.log(elem, data[elem]) jadi itu akan memanggil properti kemudian value di data di ambil kemudan di print
+
+// jadi kita membuat varible i yang valuenya 10, jika 10 lebih besar samadengan 1, maka 10 akan di kurang hingga nilai sama dengan 1 jadi 10,9,8....1, maka console.log i jadi variable i di paggil
+var i = 10;
+for (; i >= 1; i--) {
+  console.log(i);
+}
+
+// memakai OPERATOR AUGMENTED ASSINGNMENTS
+var total = 0;
+for (var num = 20; num >= 0; num--) {
+  total += num; // OPERATOR AUGMENTED ASSINGNMENTS
+}
+console.log(total);

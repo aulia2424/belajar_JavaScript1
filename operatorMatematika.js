@@ -24,7 +24,8 @@ originalResult = result;
 
 result = result * 2;
 console.log(originalResult + " * 2 = " + result); //=> keadaan terakhir yaitu 2 * 2 lalu ita panggil variable hasilnya = 4
-OPERATOR AUGMENTED ASSINGNMENTS
+/*
+                OPERATOR AUGMENTED ASSINGNMENTS
        | operator matematika   | operator augmented assignments |
        | results = result + 10 | result += 10                   |
        | result = result - 10  | result -= 10                   |
@@ -32,21 +33,22 @@ OPERATOR AUGMENTED ASSINGNMENTS
        | result = result ** 10 | result **= 10                  |
        | result = result / 10  | result /= 10                   |
        | result = result % 10  | result %= 10                   |
-       let result = 10;
-       result += 10;
-       document.writeln("<p>" + result + "</p>");
+     */
+let resultDua = 10;
+resultDua += 10;
+document.writeln("<p>" + resultDua + "</p>");
 
-       result -= 10;
-       document.writeln("<p>" + result + "</p>");
+resultDua -= 10;
+document.writeln("<p>" + resultDua + "</p>");
 
-       result *= 10;
-       document.writeln("<p>" + result + "</p>");
+resultDua *= 10;
+document.writeln("<p>" + resultDua + "</p>");
 
-       result **= 10;
-       document.writeln("<p>" + result + "</p>");
+resultDua **= 10;
+document.writeln("<p>" + resultDua + "</p>");
 
-       result /= 10;
-       document.writeln("<p>" + result + "</p>");
+resultDua /= 10;
+document.writeln("<p>" + resultDua + "</p>");
 
-       result %= 10;
-       document.writeln("<p>" + result + "</p>");
+resultDua %= 10;
+document.writeln("<p>" + resultDua + "</p>");
