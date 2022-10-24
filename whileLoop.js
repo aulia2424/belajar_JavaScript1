@@ -53,3 +53,11 @@ while (total < cars.length) {
   console.log(cars[total]);
   total++;
 }
+
+console.log("\n");
+
+var v = 5;
+while (v >= 1) {
+  v--;
+  console.log(v);
+}
