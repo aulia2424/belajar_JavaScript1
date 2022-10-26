@@ -1,5 +1,5 @@
 /*
-1. bahasa pemrograman yang bnayak menghasilkan peluang kerja
+1. bahasa pemrograman yang banyak menghasilkan peluang kerja
 2. Javascript pengertian dan lain lain
 3. syntax dan cara menjalankan js
 4. variable
@@ -12,15 +12,48 @@
 */
 
 /*
-2. JavaScript di sever
-       - awalnya js memang kebanyakan digunakan untuk berjalan di client side (browser)
-       - namun akhir-akhir ini, semenjak keluar teknologi nodejs yang bisa digunakan untuk mnjalankan js tanpa browser, sekarang akhirnya js juga banyak digunakan untuk membuat aplikasi server
-       - karena ini, akhirnya sekrang js dikenal dengan bahasa pemrograman fullstack (be adn fe) karena bisa digunakan untuk membuat aplikasi be dan aplikasi fe
+untuk pertanyaan
+css (bukan bahasa pemrograman) dan html apakah dia bahasa pemrograman?
+css merupakan aturan untnuk mengatur beberapa komponen dalam sebuah web sehingga akan lebih terstruktur dan seragam
+html markup language adalah standard pemrograman yang digunakan  untuk membuat halaman web
 
-       JavaScript dan Ecma Script
-       - karena js sekarang hampir di adopsi oleh sebuah aplikasi browser, akhirnya dibuatlah sebuah standarisasi yang bernama ecmaScript
-       - organisasi yang melakukan standarisasi ecma adalah ECMA International
-       - sekarang karena ecmascript dan js sama, sekarang bisa dibilang ecmascript dan js adalah dua nama untuk satu bahasa pemrograman yang sama.
+pas komen hanya menjelaskan komen oneline //
+multiple komennya tidak di jelaskan
+
+if, else if , else dan switch  tidak di jelaskan
+
+
+for tadi sempat bilang data yang ingin di isi itu apa apakah kondisi atau increement
+
+terlalu lama menjelaskan dan tidak to the point terlalu mengulur waktu sehigga banyak yang belum di jelaskan looping ...
+
+
+agung
+switch salah tidak memakai kondisi
+
+1. paling banyak menghasilkan peluang kerja
+jika berdasarkan tiobe index  survei terbanyak di sebut pypl(popularity of programing language)mengenai bahasa terpopuler dan yang paling banyak di cari yaitu python, java, js, c#, dan php
+jika berdasarkan stack overflow bahasa yang paling populer yaitu python, js, go, typescript, kotlin
+
+-python 
+adalah yang paling populer untuk dipelajari, python ini saat ini digunakan untuk data sience, machine learning bahkan untuk blok chain dan crypto currency dan python juga bisa digunakan untuk web development, tapi di bagian backend dan juga bisa digunakan IOT(internet of things) Internet of Things (IoT) adalah konsep komputasi tentang objek sehari-hari yang terhubung ke internet dan mampu mengidentifikasi diri ke perangkat lain.
+
+- java
+adalah sebuah bahasa pemrograman yang biasnaya digunakan untuk membuat aplikasi dekstop atau enterprice tapi juga bisa digunakan untuk membuat mobile apps, bisa juga untuk membuat web bahkan Iot
+
+- js adalah bahas pemrograman yang sangat flexibel, bisa di be dan fe, dia juga bisa untuk mobile, bisa juga untuk data visualization, bikin gem juga bisa dan untuk aplikasi IoT
+
+- kotlin untuk membuat aplikasi android
+
+kenapa ko ga ada php? perlu di ingat yang saya ambil berdasarkan survei, tapi tidak bisa di pungkiri untuk hari ini php masih banyak di gunakan di dunia.
+
+ini saya ambil dari survei dan sudah pasti tutorialnya banyak, komunitasnya besar, dan yang pasti banayak di cari oleh perusahaan perusahaan, jadi banyak lapangan pekerjaan yang membutuhkan bahasa bahasa tadi.
+
+2. Javascript merupakan bahasa pemrograman web yang bersifat Client Side Programming Language, yang artinya tipe bahasa pemrograman yang pemrosesannya dilakukan oleh client. Client dalam hal ini merujuk pada web browser. Apabila kita ingin menguasai Javascript, ada beberapa hal dasar (basic) yang perlu diperlajari, antara lain: variabel dan data array, objek, perulangan, percabangan, fungsi, DOM untuk manipulasi, dan lain sebagainya.
+
+Pada tahun 1994 JavaScript mulai dikenal, pada saat itu web dan internet sudah mulai berkembang. JavaScript didesain oleh Brendan Eich yang merupakan karyawan Netscape. Transformasi nama JavaScript, dimulai dari Mocha, Mona, LiveScript, hingga akhirnya resmi bernama JavaScript. 
+
+Versi awal bahasa JS hanya dipakai di kalangan Netscape beserta dengan fungsionalitas pun yang masih terbatas. Singkat cerita pada tahun 1996 JavaScript secara resmi dinamakan sebagai ECMAScript. ECMAScript 2 dikembangkan pada tahun 1998 yang dilanjutkan dengan ECMAScript 3 setahun kemudian. ECMAScript terus dikembangkan sampai akhirnya menjadi JavaScript atau JS hingga saat ini. Pada tahun 2016, 92% web diketahui telah menggunakan JavaScript. Itulah mengapa JavaScript atau JS terus berkembang.
 
 3.  jika kita menggunakan html maka tag untuk menjalanjan js yaitu <script></script>
     jika di js tidak perlu menggunakan tag
@@ -35,7 +68,6 @@ document.writeln("ncit babeh");
        - dengan menyimpan data di variable, kita bisa menggunakannya lagi dengan menyebutkan nama variablenya
        - untuk membuat variable di js, kita bisa menggunakan kata kunci var diikuti dengan nama variablenya
        - js adalah dynamic language, artinya variable di js tidak terpaku harus menggunakan satu tipe data, kita bisa mengubah-ubah tipe data di variable yang sama.
-var fullName;
 
 5.  KOMENTAR
        - komentar adalah kode program yang tidak akan dieksekusi ketika dibaca
@@ -85,7 +117,7 @@ if (examValue > 80) {
 
 else
 =====ELSE EXPRESION=====
-- blok is akan di eksekusi ketika kondisi if bernilai true
+- blok else akan di eksekusi ketika kondisi if bernilai true
 - kadang kita ingin melakukan eksekusi preogram tertentu jika konsidi if bernilai false
 - hal in bisa dilakukan menggunakan else expression
 
@@ -100,7 +132,7 @@ if (examValue < 50) {
 else if 
 =====ELSE IF EXPRESSION=====
 - kadang dalam if, kita butuh membuat beberapa kondisi
-- kasus seperti ini, di js kita bisa menggunakan else is expression
+- kasus seperti ini, di js kita bisa menggunakan else expression
 
 const examValue = 90;
 if (examValue > 80) {
@@ -122,6 +154,7 @@ Switch Statement
         - jika hanya ingin menentukan A lulus atau tidak memakai switch
      
         console.log("-Switch Statement-");
+       
         
                  jadi kan nilai kita A maka valuenya yaitu Brilliant Anda Lulus Dengan Nilai Sangat Baik.
                  - case itu maksutnya kasus jadi dalam kasus nilai kita A
@@ -183,13 +216,51 @@ Switch Statement
          cara 3 menggunakan ternary operator
         console.log(pilihan == 1 ? "light" : pilihan == 2 ? "dark" : pilihan == 3 ? "nocture" : pilihan == 4 ? "terminal" : "indigo");
         
-8. conditional
- ======TIPE DATA BOOLEAN (true of false)======
-       - tipe data boolean adalah tipe data yang berisikan data kebenaran, artinya hanya ada dua data, benar dan salah (yes atau no)
-       - benar di representasikan dengan kata kunci true, dan salah di representasikan dengan kata kunci false
-       - walaupun tipe data boolean merupakan tipe data yang sangat sederhana, tapi tipe data boolean akan banyak digunakan di berbagai fitur pemrogramannode
-console.log(true);
-console.log(false);
+8. 
+conditional
+ percabangan pada Javascript atau yang biasa disebut Javascript Conditional Statement. Untuk membuat suatu halaman web yang dinamis dan interaktif, perancang halaman web membutuhkan perintah-perintah yang dapat mengatur aliran dan informasi (control flow). Berdasarkan hasil program yang telah dibuat, Javascript akan membuat keputusan alur mana yang akan dieksekusi.
+
+Dalam Javascript terdapat dua macam pernyataan percabangan yaitu If…Else Statement dan Switch. If…Else Statement digunakan untuk menguji sebuah kondisi dan mengeksekusi pernyataan tertentu bila kondisi tersebut terpenuhi, atau mengeksekusi pernyataan lain bila kondisi tersebut tidak terpenuhi. Kondisi merupakan ekspresi atau keadaan Javascript yang memiliki nilai Boolean true atau false.
+if (condition) => x<=10; x++ {
+  code berjala jika kondisi benar
+} else {
+  code berjalan jika kondisi salah
+}
+ Dalam kondisi Javascript memiliki ekspresi nilai Boolean yang dibuat dengan operasi perbandingan (Comparison Operators).
+ ini menggunakan comparison operatorsif (pilihan == 1) {
+  console.log("light");
+} else if (pilihan == 2) {
+  console.log("dark");
+} else if (pilihan == 3) {
+  console.log("nocture");
+} else if (pilihan == 4) {
+  console.log("terminal");
+} else {
+  console.log("indigo");
+}
+
+Selain menggunakan If…Else Statement, percabangan Javascript dapat dilakukan dengan perintah Switch. Pernyataan Switch digunakan untuk menyederhanakan If…Else Statement yang terlalu banyak.
+var pilihan = 1
+switch (pilihan) {
+case 1:
+  console.log("light"); jika nilai 1 maka outputnya light
+  break; fungsinya untuk memberhentikan kode program jadi ketika variavle valuenya 1 maka akan berhenti di case 1
+case 2:
+  console.log("dark");
+  break;
+case 3:
+  console.log("nocture");
+  break;
+case 4:
+  console.log("terminal");
+  break;
+default:
+  console.log("indigo");
+ }
+
+Kondisi pada percabangan Switch merupakan variabel yang akan diperiksa. Hasil percabangan dari variabel tersebut akan dikelola oleh perintah case. Opsi default bisa ditambahkan untuk menangani kasus yang tidak ditangani oleh perintah case atau menjadi kondisi terakhir ketika tidak didefinisikan pada perintah case. Demikian pembahasan mengenai percabangan pada Javascript (Conditional Statement).
+
+
 
 9. 
 For Loop
@@ -204,22 +275,9 @@ For Loop
         3. Post statement akan dieksekusi setiap kali diakhir perulangan
         4. Init statement, Kondisi dan Post Statement tidak wajib diisi, jika kondisi tidak diisi, berarti kondisi selalu bernilai true
       
- Contoh Perulangan Tanpa Henti
-        for (; ;) {
-          alert("For Loop");
-        }
-        console.log("-For Loop-");
-        //  artinya akan mengulang dari 1 sampai ke sepuluh karena kurang dari sama dengan 10
-        let counter = 1;
-        for (; counter <= 10; ) {
-          console.log(`Perulangan Ke ${counter}`);
-          counter++; // ini increment fungsinya agar perulangan bertambah dari 1 - 10
-        }
-        
-        console.log("\n");
-        
+ 
         console.log("-Perulangan Dengan Init Statement-");
-        for (let konter = 1; konter <= 10; ) {
+        for (let konter = 1; konter <= 10;) {
           console.log(`Perulangan urutan ke ${konter}`);
           konter++;
         }
@@ -246,7 +304,7 @@ console.log("\n");
 var sum = 0;
 var numm = 0;
 while (numm <= 10) {
-  sum += numm;
+  sum += numm; => sum = sum + num / 1 + 10 = 11 jadi outputnya 11
   numm++;
 }
 console.log(numm);
@@ -304,6 +362,8 @@ while (a >= 0) {
   a--; => ini decreement
 }
 
+
+
 console.log("\n");
 
  whileLoop Increement
@@ -316,7 +376,7 @@ while (b <= 10) {
 
 console.log("\n");
 
- DoWhile aka di print dahulu sebelum diberi kondisi jadi nyebur duluansebelum di bilangin
+ DoWhile akan di print dahulu sebelum diberi kondisi jadi nyebur duluansebelum di bilangin
 console.log("do while increement");
 var c = 1;
 do {
@@ -335,8 +395,31 @@ do {
 
 
 10. looping
-pertama tama untuk memulai loop 
-1. buat initialize / starter or startting point
-2. condition for when your loop should end (keadaan terakhir atau kapan loop kita berhenti.)
-3. incrementor or decrementor , continues up or down (apakah loop kita mau menaik atau menurun)        
+Loop atau perulangan pada javascript digunakan untuk melakukan tugas berulang berdasarkan suatu kondisi. Loop atau perulang pada umumnya tersedia pada semua bahasa pemrograman meskipun implementasi dan sintaks berbeda-beda.
+
+Sebagai contoh kita ingin menampilkan angka 1 sampai 100, betapa melelahkan jika kita harus mengetik manual angka 1 sampai 100. Disinilah perulangan dapat mempersingkat waktu penulisan angka-angka tersebut.
+
+Jenis-jenis perulang pada javascript
+For
+While
+Do While
+forEach
+for([inisialisasi]; [kondisi]; [eksekusi iterasi]) {
+     // blok kode
+}
+Inisialisasi adalah saat pertama kali kita mendeklarasi sebuah nilai awal, dimana nilai awal akan berubah selama belum memenuhi syarat kondisi.
+Kondisi berfungsi untuk mengecek perubahan yang terjadi setiap kali terjadi eksekusi iterasi perulangan dengan menggunakan operator perbandingan.
+Eksekusi Iterasi proses akhir setiap kali terjadi eksekusi iterasi, biasanya digunakan untuk proses penambahan (increment) atau pengurangan (decrement).     
+
+
+farida
+script di taruh di bawah
+*/
+
+// jadi ngejelasinnya kudu detail jadi 1 == "1" maka = true
+// jika 1 === "1" maka false
+
+/*
+alfi
+
 */
