@@ -4,18 +4,14 @@
        -sedangkan undefined adalah variable belum ditambahkan value apapun.
       */
 
-document.writeln("-Null & Undefined-");
-document.writeln("<br>");
-document.writeln("nanti keluar popup NULL");
+console.log("-Null & Undefined-");
+console.log("nanti keluar popup NULL");
 //jika valuenya di apus maka yg muncul akan undefine , jika value di ada dengan null maka valuenya null.
 let namaPertama = null;
 if (namaPertama === undefined) {
-  alert("UNDEFINED");
+  console.log("UNDEFINED");
 } else if (namaPertama == null) {
-  alert("NULL");
+  console.log("NULL");
 } else {
-  alert(namaPertama);
+  console.log(namaPertama);
 }
-
-document.writeln("<br>");
-document.writeln("<br>");
