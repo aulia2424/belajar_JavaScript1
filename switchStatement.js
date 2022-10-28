@@ -4,12 +4,12 @@
         - Kondisi di switch statement hanya untuk perbandingan ==
         - jadi kalo mmisal make perbandingan > 78 lebihkecil/ lebih besar maka memakai else if
         - jika hanya ingin menentukan A lulus atau tidak memakai switch
-      */
-console.log("-Switch Statement-");
-/*
+  
          jadi kan nilai kita A maka valuenya yaitu Brilliant Anda Lulus Dengan Nilai Sangat Baik.
          - case itu maksutnya kasus jadi dalam kasus nilai kita A
-        */
+*/
+console.log("-Switch Statement-");
+
 const nilaiRapot = "A"; //ini nilai rapot kita
 switch (nilaiRapot) {
   case "A":
@@ -35,6 +35,9 @@ var pilihan = 8;
 5. indigo
 */
 
+console.log("\n");
+
+console.log("with if else");
 // cara 1 menggunakan if
 if (pilihan == 1) {
   console.log("light");
@@ -47,6 +50,10 @@ if (pilihan == 1) {
 } else {
   console.log("indigo");
 }
+
+console.log("\n");
+
+console.log("with switch statement");
 
 // cara 2 memakai switch statement
 switch (pilihan) {
@@ -66,5 +73,8 @@ switch (pilihan) {
     console.log("indigo");
 }
 
+console.log("\n");
+
+console.log("with terary operator");
 // cara 3 menggunakan ternary operator
 console.log(pilihan == 1 ? "light" : pilihan == 2 ? "dark" : pilihan == 3 ? "nocture" : pilihan == 4 ? "terminal" : "indigo");
