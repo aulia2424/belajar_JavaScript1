@@ -7,3 +7,9 @@ console.log("-Ternary Operator-");
 const nilai = 90;
 const ucapan = nilai >= 75 ? "Selamat Anda Lulus" : "Silahkan Coba Lagi"; // hanya bisa dua kondisi
 console.log(`${ucapan}`);
+
+console.log("\n");
+
+// cara 3 menggunakan ternary operator
+var pilihan = 8;
+console.log(pilihan == 1 ? "light" : pilihan == 2 ? "dark" : pilihan == 3 ? "nocture" : pilihan == 4 ? "terminal" : "indigo");
