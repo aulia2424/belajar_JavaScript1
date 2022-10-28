@@ -21,7 +21,7 @@
 // data keluar setelah NULL yang memiliki value sesuai dengan tipe datanya apa
 // untuk mengecek tipedata
 console.log("-Operator typeof-");
-let data = 100;
+let data = "aul";
 const typeData = typeof data;
 if (typeof data === "number") {
   console.log("Number");
