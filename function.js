@@ -18,7 +18,7 @@ function lia(name) {
   //=> perameter
   console.log("hey " + name + " kamu sangat brilliant!");
 }
-lia("aulia");
+lia();
 
 // array di function
 function printerArray(manggo) {
@@ -28,4 +28,13 @@ printerArray(["kucing", "kelinci", "rubah", "aulia"]);
 
 function adder(num1, num2) {
   return num1 + num2;
+}
+
+var result = adder(2, 4) + 2;
+console.log("The result is : " + result);
+
+function score(team1, team2) {
+  if (team1 >= 1) {
+    console.log;
+  }
 }
