@@ -6,9 +6,11 @@
 - jika kita memaksa memasukkan menjadi object, dan ini bisa berbahaya, karena beberapa operasi di array mungkin bisa berubah hasilnya
 
 ======TIPE DATA OBJECT=====
-- tipe data bject adalah tipe data yang mirip dengan tipe data array
-- yang membedakan adalah index pada tie data object bisa menggunakan string
+- tipe data object adalah tipe data yang mirip dengan tipe data array
+- yang membedakan adalah index pada tipe data object bisa menggunakan string
 - index di object biasanya di sebut attributes atau properties, bukan index
+- fungsi object untuk menampilkan properti yang berisi value agar lebih efisien
+- parameter di object bole sama
 */
 
 // membuat object kosong

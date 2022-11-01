@@ -9,15 +9,15 @@ var i = "team 1 win";
 var x = "team 2 win";
 var y = "draw";
 function score(team1, team2) {
-  if (team1 > 2) {
+  if (team1 > team2) {
     return i;
-  } else if (team2 > 2) {
+  } else if (team2 > team1) {
     return x; // return = respon
   } else {
     return y;
   }
 }
-console.log(score(2, 2));
+console.log(score(2, 3));
 
 // nomor 3
 function avg(a, b, c) {

@@ -97,8 +97,10 @@ for (let b = 0; b < a; b++) {
 console.log(star);
 
 console.log("\n");
+console.log("\n");
+console.log("\n");
 
-console.log("Heart Star Pattern");
+console.log("i         u");
 var d = 6;
 var str = "";
 for (let e = d / 2; e < d; e += 2) {
@@ -120,6 +122,7 @@ for (let e = d / 2; e < d; e += 2) {
   }
   str += "\n";
 }
+
 // lower part
 // inverted pyramid
 for (let e = d; e > 0; e--) {
