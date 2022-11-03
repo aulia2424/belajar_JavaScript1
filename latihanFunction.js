@@ -30,4 +30,18 @@ console.log(avg(3, 6, 9));
 // jika js di beri return maka fungsinya berhenti
 
 // 100 outputnya 1,1
-function converte(a, b) {}
+// function converte(a, b) {}
+
+// var amount = parseFloat(readLine(), 10);  parseFloat merubah nilai menjadi nilai float
+// var rate = parseFloat(readLine(), 10);  parseFloat merubah nilai menjadi nilai float
+
+/*
+  argumen itu satu kesatuan dari parameter
+
+  perbedaan function dan variable
+  variable = hanya berisi satu variable
+  function = bisa berisi beberapa parameters yang dimana argument adalah inputan terakhir biasanya di paling bawah 
+
+  fuction itu reuse (bisa digunakan kembali)
+
+  */

@@ -11,10 +11,19 @@
 - index di object biasanya di sebut attributes atau properties, bukan index
 - fungsi object untuk menampilkan properti yang berisi value agar lebih efisien
 - parameter di object bole sama
+
+daftar dari nilai nilia yang dipisahkan dengan colons :
+
+
 */
 
 // membuat object kosong
-const orang = {};
+const orang = {
+  //=> objectnya
+  nama: "auliaaa", // ini properti
+  alamat: "jonggol",
+  kelas: "12 rpl1",
+};
 
 // mengubah property di object
 orang["nama"] = "aulia martha slebew";
