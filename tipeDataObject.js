@@ -51,3 +51,35 @@ const orangDua = {
 console.log(`nama : ${orangDua.nama}`);
 console.log(`alamat : ${orangDua.alamat}`);
 console.log(`kelas : ${orangDua.kelas}`);
+
+/*
+object selalu di awali dan di akhiri dengan kurung kurawal (curly bracked{})
+di dalam object terdapat property dan value property yang dimana dipisah oleh colons (:)
+kemudian jika property lebih dari dua beri koma (,)
+ketika ingin memanggil property di object pakai (.) atau array associative
+function di dalam object di sebut method
+untukmenghitung jumlah data dan karakter kita bisa memakai lenght
+method itu property yang d dalamnya terdapat function di object
+
+contoh menggunakan (.)
+const orangDua = {
+  nama: "auliaaa",
+  alamat: "jonggol",
+  kelas: "12 rpl1",
+};
+console.log(orangDua.nama)
+
+contoh menggunakan array associative
+const orangTiga = {
+  nama: "auliaaa",
+  alamat: "jonggol",
+  kelas: "12 rpl1",
+};
+console.log(orangTiga["nama"]);
+*/
+const orangTiga = {
+  nama: "auliaaa",
+  alamat: "jonggol",
+  kelas: "12 rpl1",
+};
+console.log(orangDua.nama);

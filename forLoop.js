@@ -37,3 +37,11 @@ console.log("-Perulangan Dengan Post Statement-");
 for (let kontak = 1; kontak <= 10; kontak++) {
   console.log(`Perulangan Ke ${kontak}`);
 }
+
+function iban(aul, roko) {
+  this.aul = aul;
+  this.roko = roko;
+  return aul + roko;
+}
+var iban1 = new iban("pacar 1", "pacar 2");
+console.log(iban1);

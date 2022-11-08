@@ -78,3 +78,51 @@ function Siswa(nama, noAbsen, jurusan) {
 // jika kita tidk menggunakan new maka program akan membaca menjadi function declaration bukan function constructor
 var Siswaa = new Siswa("aulia", 6, "rpl");
 console.log(Siswaa);
+
+// OBJECT pada JS : THIS
+// this adalah sebuah keyword spesial yang secara otomatis akan di definisikan pada sebuah function
+
+// cara 1 menggunakan function declaration
+var obj = {};
+obj.halo = function () {
+  console.log(this);
+  console.log("halo");
+};
+obj.halo();
+
+// cara 2 menggunakan function constructor
+// mengembalikan object baru yaitu Halo
+function Halo() {
+  console.log(this);
+  console.log("halo");
+}
+new Halo();
+
+// pengelolaan angkot
+function Angkot(supir, trayek, kas, penumpang) {
+  this.supir = supir;
+  this.trayek = trayek;
+  this.kas = kas;
+  this.penumpang = penumpang;
+  thispenumpangNaik = function (namaPenumpang) {
+    this.penumpang.push(namaPenumpang);
+    return this.penumpang;
+  };
+  this.penumpangTurun = function (namaPenumpang, bayar) {
+    if (this.penumpang.length === 0) {
+      console.log("angkot masih kosong");
+      return false;
+    }
+    for (var i = 0; i < this.penumpang.length; i++) {
+      if (this.penumpang[i] == namaPenumpang) {
+        this.penumpang[i] = undefined;
+        this.kas += bayar;
+        return this.penumpang;
+      }
+    }
+  };
+}
+var Angkot1 = new Angkot("aulia", ["cicaheum", "cibiru"], 0, []);
+console.log(Angkot1);
+var Angkot2 = new Angkot("iban", ["cileungsi", "jonggol"], 0, []);
+console.log(Angkot2);
