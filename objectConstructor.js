@@ -2,6 +2,9 @@
 penggunaan this untuk memilih apa yang ingin kita pakai misal this.name
  this menunjukan object yang sedang di pilih
  kalo di php memakai tanda panah (=>)
+
+ - property adalah data yang terkait dengan object
+ - method adalah sebuah porpuerty yang berisi function
 */
 // this
 function person(name, age, color) {
@@ -61,4 +64,4 @@ var a = b.jumlah(b.x, b.y);
 console.log(a);
 
 // abis lulus mau ikut bootcamp
-// jobstreet, kalibr, glassdoor, karir.com,
+// website cari kerja jobstreet, kalibr, glassdoor, karir.com,

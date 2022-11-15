@@ -4,11 +4,12 @@ Document adalah area isi website, Object adalah sebuah nilai atau tipe data pada
 Jadi DOM adalah representsi element HTML pada dokument menjadi sebuah object 
 - DOM membuat seluruh komponen dari halaman web dapat diakses dan dimanipulasi
 - Komponen yang dapat dimanipulasi DOM
+- menggunakan metode cammel case (fontSize)
 1. Element HTML
 2. Atribut
 3. Text
 
-- Dom dapat dimanipulasi (dibuat, diuabh, dihapus) menggunakan JS
+- Dom dapat dimanipulasi (dibuat, diubah, dihapus) menggunakan JS
 
 Hierarki DOM
 1. Window
@@ -51,13 +52,20 @@ Untuk contoh di atas:
 <title> memiliki satu orang tua (<head>) dan tidak memiliki anak;
 <body> memiliki dua anak (<h1> dan <a>) dan satu orang tua (<html>);
 
-DOM MANIPULATION METHOD
-- manipulasi element
-- manipulasi node 
+STRUKTUR HIERARKI DOM
+A. root node
+- node yang menjadi sumber dari semua node lain di dalam DOM
+- document
 
-MANIPULASI ELEMENT
-- element.innerHTML
-- element.style.<property>
-- element.setAttribute()
-- element.classList
+B. parent node 
+- node yang berada 1 tingkat diatas node lain
+- body adalah parent dari h1, p, p...
+
+C. child node
+- node yang berada 1 tingkat dibawah node yang lain
+- h1 adalah child dari body
 */
+
+// memanggi element aitu id kemudian isi di idnya di isi dengan hello aul
+var elem = document.getElementById("p1");
+elem.innerHTML = "hello aul";
