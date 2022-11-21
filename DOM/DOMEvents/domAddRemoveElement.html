@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- lesson 48 -->
+    <div id="demo">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum accusantium enim a atque consequuntur laudantium ea, dolore voluptates laboriosam temporibus.
+
+      <!-- removeChild -->
+      <div id="tagP">
+        <div id="p1">paragraf 1</div>
+        <div id="p2">paragraf 2</div>
+      </div>
+
+      <!-- replaceChild -->
+      <div id="p3">ini P3</div>
+      <!-- end lesson 48 -->
+    </div>
+    <script>
+      //   lesson 48
+      // appendChild
+      window.onload = function () {
+        //creating a new paragraph
+        var p = document.createElement("p");
+        var node = document.createTextNode("belajar appendChild");
+        //adding the text to the paragraph
+        p.appendChild(node); //
+
+        var div = document.getElementById("demo");
+        //adding the paragraph to the div
+        div.appendChild(p);
+
+        var h1 = document.createElement("h1");
+        var isiText = document.createTextNode("ini appendChild");
+        h1.appendChild(isiText);
+
+        var div1 = document.getElementById("demo");
+        //adding the h1 to the div1
+        div1.appendChild(h1);
+
+        h1.onclick = function () {
+          h1.style.fontSize = "50px";
+        };
+      };
+      // end appendChild
+
+      // removeChild untuk menghapus
+      var parent = document.getElementById("tagP");
+      var child = document.getElementById("p1");
+      parent.removeChild(child); //untuk menghilangkan tag p1
+      // end removeChild
+
+      //  replaceChild
+      var h3 = document.createElement("h3");
+      var isiH3 = document.createTextNode("belajar replaceChild");
+      h3.appendChild(isiH3);
+
+      var ayah = document.getElementById("demo");
+      var anak = document.getElementById("p3");
+      ayah.replaceChild(h3, anak);
+      // end replaceChild
+
+      //   end lesson 48
+    </script>
+  </body>
+</html>

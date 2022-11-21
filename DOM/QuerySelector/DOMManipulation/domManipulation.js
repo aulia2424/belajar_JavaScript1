@@ -53,7 +53,7 @@ MANIPULASI NODE
 - node.appendChild() menambahkan 
 - node.insertBefore()
 - parentNode.removeChild()
-- parentNode.replaceChild() ini menerima dua parameter 1= nodenya barunya mereplace node lama
+- parentNode.replaceChild()
 ...
 */
 // document.createElement(""); and document.createTextNode("");
@@ -76,25 +76,8 @@ MANIPULASI NODE
 // sectionA.removeChild(link);
 
 const sectionB = document.getElementById("b");
-const p4 = sectionB.querySelector("p"); // mengambil selector p
-const h2Baru = document.createElement("h2"); // membuat element h2
-const textH2Baru = document.createTextNode("JUDUL BARU"); // mengisi h2 yang isinya JUDUL BARU
-h2Baru.appendChild(textH2Baru); // memasukkan childnya yaitu textH2Bru
-sectionB.replaceChild(h2Baru, p4); // jadi replaceChild bisa berisikan 2 parameter yang parameter pertamanya adalah element baru yang mereplace element lama
-h2Baru.style.backgroundColor = "lightblue";
+const p4 = sectionB.querySelector("p");
+const h2Baru = document.createElement("h2");
+const textH2Baru = document.createTextNode("judul h2 Baru");
 
-// merubah background menjadi pink
-const p = document.getElementsByTagName("p"); // menyeleksi tag p menggunakan forloop
-for (let i = 0; i <= 4; i++) {
-  p[i].style.backgroundColor = "pink";
-}
-
-/*
-MANIPULASI NODE (METHOD BARU)
-- parentNode.append() untuk menambahkan element di akhir sebuah parent
-- parentNode.prepend() untuk menambahkan element di awal sebuah parent
-- childNode.before() untuk menambahkan element di sebelum sebuah child
-- childeNode.after() untuk menambahkan element di sesudah sebuah child
-- childNode.remove() untuk menghapus element di child
-- childNode.replaceWith() untuk memindahkan element di child
-*/
+// ibanganteng @aulcanttik
