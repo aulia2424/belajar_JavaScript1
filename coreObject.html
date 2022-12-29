@@ -47,17 +47,17 @@
       //   setInterval(thisTime, 1000);
 
       // MENGHITUNG HARI LAHIR MENGGUNAKAN DATE METHOD
-      // function birthOfCanal(year, month, day) {
-      //   var namaHari = ["", "senin", "selasa", "rabu", "kamis", "jumat", "sabtu", "minggu"];
-      //   var d = new Date(year, month, day);
-      //   var day = d.getDay();
-      //   return namaHari[day];
-      // }
-      // var y = prompt("masukan tahun lahir");
-      // var m = prompt("masukan bulan lahir"); // memasukkannya berdasarkan array dari dari 0 misal februari = bulan 1
-      // var d = prompt("masukan tanggal lahir");
-      // var dDay = birthOfCanal(y, m - 1, d);
-      // alert("hari lahir anda adalah hari " + dDay);
+      function birthOfCanal(year, month, day) {
+        var namaHari = ["", "senin", "selasa", "rabu", "kamis", "jumat", "sabtu", "minggu"];
+        var d = new Date(year, month, day);
+        var day = d.getDay();
+        return namaHari[day];
+      }
+      var y = prompt("masukan tahun lahir");
+      var m = prompt("masukan bulan lahir"); // memasukkannya berdasarkan array dari dari 0 misal februari = bulan 1
+      var d = prompt("masukan tanggal lahir");
+      var dDay = birthOfCanal(y, m - 1, d);
+      alert("hari lahir anda adalah hari " + dDay);
     </script>
   </body>
 </html>
